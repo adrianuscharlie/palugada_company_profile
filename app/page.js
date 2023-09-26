@@ -15,7 +15,7 @@ export default function Home() {
         const data = await getProducts();
 
         // Introduce a 10-second (10000 milliseconds) delay
-        await new Promise((resolve) => setTimeout(resolve, 150));
+        await new Promise((resolve) => setTimeout(resolve, 250));
 
         // Update the state with the fetched data
         setProducts(data.slice(0, 6));
