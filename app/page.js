@@ -15,7 +15,7 @@ export default function Home() {
         const data = await getProducts();
 
         // Introduce a 10-second (10000 milliseconds) delay
-        await new Promise((resolve) => setTimeout(resolve, 250));
+        await new Promise((resolve) => setTimeout(resolve, 150));
 
         // Update the state with the fetched data
         setProducts(data.slice(0, 6));
@@ -75,7 +75,7 @@ export default function Home() {
               </h3>
             </div>
             <div className="w-full self-center pt-5 px-4 lg:w-1/2 mb-20 lg:mb-0">
-              <p className="text-xl font-semibold text-justify text-slate-800">
+              <p className="text-xl font-semibold text-start text-slate-800">
                 Palugada Sejahtera Group, based in the vibrant heart of Daerah
                 Istimewa Yogyakarta, Indonesia, is an esteemed international
                 trading company. We pride ourselves on cultivating robust

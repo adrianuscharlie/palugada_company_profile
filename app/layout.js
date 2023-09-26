@@ -3,7 +3,7 @@ import Navbar from '@/components/Nav'
 import Footer from '@/components/Footer'
 export const metadata = {
   title: 'Palugada Sejahtera Group',
-  description: 'General Trading Company From',
+  description: 'General Trading Company From Indonesia',
 }
 
 export default function RootLayout({ children }) {

@@ -15,7 +15,7 @@ const Products = () => {
         const data = await getProducts();
 
         // Introduce a 10-second (10000 milliseconds) delay
-        await new Promise((resolve) => setTimeout(resolve, 250));
+        await new Promise((resolve) => setTimeout(resolve, 150));
 
         // Update the state with the fetched data
         setProducts(data);

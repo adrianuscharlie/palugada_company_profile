@@ -25,14 +25,14 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div className="px-3 justify-center items-start gap-5 w-full md:w-1/2 space-y-3">
+          <div className="px-3 justify-center items-start gap-5 w-full md:w-1/2 space-y-3 mt-10 lg:mt-0">
             <h1 className="text-secondary font-bold text-3xl">Contact us</h1>
             <div className="flex flex-wrap items-start font-semibold">
               <ul className="space-y-4 text-white">
                 <li>
                   <Link
                     href={"mailto:palugadasejahteragroup@gmail.com"}
-                    className="flex flex-wrap gap-5 hover:text-secondary"
+                    className="flex flex-wrap gap-3 hover:text-secondary"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +49,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href={"tel:+6281229482042"}
-                    className="flex flex-wrap gap-5 hover:text-secondary"
+                    className="flex flex-wrap gap-3 hover:text-secondary"
                     target="_blank"
                   >
                     <svg
@@ -69,8 +69,8 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href={"https:wa.me/6281229482042"}
-                    className="flex flex-wrap gap-5 hover:text-secondary"
+                    href={"https://wa.me/6281229482042"}
+                    className="flex flex-wrap gap-3 hover:text-secondary"
                     target="_blank"
                   >
                     <svg
@@ -87,8 +87,8 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href={"https:instagram.com/psgtrading"}
-                    className="flex flex-wrap gap-5 hover:text-secondary"
+                    href={"https://instagram.com/psgtrading"}
+                    className="flex flex-wrap gap-3 hover:text-secondary"
                     target="_blank"
                   >
                     <svg

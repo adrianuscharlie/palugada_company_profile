@@ -62,7 +62,7 @@ const Contact = () => {
                     </Link>
                     <Link
                       target="_blank"
-                      href={"https:wa.me/6281229482042"}
+                      href={"https://wa.me/6281229482042"}
                       className="group flex flex-wrap rounded-full text-white bg-primary hover:bg-secondary p-5"
                     >
                       <svg
@@ -79,7 +79,7 @@ const Contact = () => {
                     </Link>
                     <Link
                       target="_blank"
-                      href={"https:instagram.com/psgtrading"}
+                      href={"https://instagram.com/psgtrading"}
                       className="group flex flex-wrap rounded-full text-white bg-primary hover:bg-secondary p-5"
                     >
                       <svg

@@ -196,10 +196,10 @@ const page = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 px-4  items-start justify-center mt-3 gap-10">
               <div className=" justify-center items-start max-w-xl py-3 p-5 text-center">
                 <Image
-                  className="object-contain rounded-md"
+                  className="object-cover rounded-md"
                   width={200}
                   height={200}
-                  src={require("@/assets/charlie.jpeg")}
+                  src={require("@/assets/sinto.jpg")}
                   alt={"Charlie Photos"}
                 />
                 <h3 className="font-bold text-secondary text-2xl mt-5">
@@ -210,7 +210,7 @@ const page = () => {
               <div className=" justify-center items-start max-w-xl py-3 p-5 text-center">
                 <Image
                   className="object-contain rounded-md"
-                  width={200}
+                  width={228}
                   height={200}
                   src={require("@/assets/charlie.jpeg")}
                   alt={"Charlie Photos"}
