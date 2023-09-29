@@ -1,8 +1,23 @@
-'use client'
+"use client";
 import Link from "next/link";
 import React from "react";
 import { useState } from "react";
+
 const Contact = () => {
+  const [email,setEmail]=useState({
+    email:"",
+    subject:"",
+    message:""
+  })
+  
+  const handleChange=(e)=>{
+    const { name, value } = e.target;
+    setEmail(prevState=>({
+      ...prevState,
+      [name]:value
+    }))
+  }
+
 
   return (
     <>
@@ -36,7 +51,7 @@ const Contact = () => {
                         <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
                       </svg>
                       <span class="absolute scale-0 rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100">
-                      business@palugadasejahteragroup.com
+                        business@palugadasejahteragroup.com
                       </span>
                     </Link>
                     <Link
@@ -95,9 +110,23 @@ const Contact = () => {
                       </span>
                     </Link>
                   </div>
+                  <iframe
+                  className="my-10"
+                    title="Google Map"
+                    width="600"
+                    height="300"
+                    frameBorder="0"
+                    style={{ border: 0 }}
+                    src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63266.408941240064!2d110.3426022486328!3d-7.666957700000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5f4d8e404389%3A0xa9c9cd3225adf148!2sCV%20Palugada%20Sejahtera%20Group!5e0!3m2!1sen!2sid!4v1695993133629!5m2!1sen!2sid`}
+                    allowFullScreen
+                  ></iframe>
                 </div>
                 <div className="w-full justify-start items-center text-start  lg:w-1/2">
-                  <form action="mailto:business@palugadasejahteragroup.com" className="space-y-8  " enctype="text/plain">
+                  <form
+                    action="mailto:business@palugadasejahteragroup.com"
+                    className="space-y-8  "
+                    enctype="text/plain"
+                  >
                     <div>
                       <label
                         for="email"
@@ -107,7 +136,9 @@ const Contact = () => {
                       </label>
                       <input
                         type="email"
+                        name="email"
                         id="email"
+                        onChange={handleChange}
                         className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-secondary block w-full p-2.5"
                         placeholder="name@company.com"
                         required
@@ -123,6 +154,8 @@ const Contact = () => {
                       <input
                         type="text"
                         id="subject"
+                        name="subject"
+                        onChange={handleChange}
                         className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
                         placeholder="Business Inquiry"
                         required
@@ -138,16 +171,19 @@ const Contact = () => {
                       <textarea
                         id="message"
                         rows="6"
+                        name="message"
+                        onChange={handleChange}
                         className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500"
                         placeholder="Leave a message..."
                       />
                     </div>
-                    <button
+                    <Link
                       type="submit"
+                      href={"mailto:business@palugadasejahteragroup.com"}
                       className="bg-primary py-3 px-5 text-sm font-medium text-center text-secondary rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300"
                     >
                       Send message
-                    </button>
+                    </Link>
                   </form>
                 </div>
               </div>

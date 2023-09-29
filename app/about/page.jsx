@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import NIB_1 from "@/assets/NIB_1.jpg";
 import NIB_2 from "@/assets/NIB_2.jpg";
+import Link from "next/link";
 const Values = [
   {
     value: "Trust",
@@ -29,13 +30,13 @@ const page = () => {
     <>
       <section className="w-full pt-36 flex py-20 px-10  ">
         <div className="container">
-          <div className="w-full px-4">
-            <div className="max-w-4xl mx-auto text-center mb-16">
+          <div className="w-full px-4 justify-center items-center">
+            <div className="max-w-4xl mx-auto text-center mb-16 items-center justify-center">
               <h1 className="text-3xl font-bold text-primary mb-3">About Us</h1>
               <h6 className="text-xl font-semibold text-secondary mb-3">
                 {"Let's get to know us better"}
               </h6>
-              <p className="text-xl text-center">
+              <p className="text-xl text-center lg:text-justify">
                 Palugada Sejahtera Group, based in the vibrant heart of Daerah
                 Istimewa Yogyakarta, Indonesia, is an esteemed international
                 trading company. We pride ourselves on cultivating robust
@@ -111,7 +112,7 @@ const page = () => {
                     src={value.img}
                     alt={value.value}
                   />
-                  <div className="text-justify">
+                  <div className="text-start lg:text-justify">
                     <h3 className="font-semibold text-primary text-2xl">
                       {value.value}
                     </h3>
@@ -203,7 +204,7 @@ const page = () => {
                   alt={"Charlie Photos"}
                 />
                 <h3 className="font-bold text-secondary text-2xl mt-5">
-                  {"Sinto"}
+                  {"Sinto Widyo"}
                 </h3>
                 <h6 className="text-primary font-semibold text-lg">CEO</h6>
               </div>
@@ -216,10 +217,10 @@ const page = () => {
                   alt={"Charlie Photos"}
                 />
                 <h3 className="font-bold text-secondary text-2xl mt-5">
-                  {"Charlie"}
+                  {"Adrianus Charlie"}
                 </h3>
                 <h6 className="text-primary text-lg font-semibold">
-                  Marketing
+                  Lead Marketing
                 </h6>
               </div>
             </div>
@@ -241,8 +242,18 @@ const page = () => {
             </div>
             <div className="flex flex-wrap justify-center items-center">
               <div className="flex flex-wrap justify-center items-center gap-5">
-                <Image src={NIB_1} width={500} alt="NIB_1" className="object-contain" />
-                <Image src={NIB_2} width={500} alt="NIB_2" className="object-contain" />
+                <Image
+                  src={NIB_1}
+                  width={500}
+                  alt="NIB_1"
+                  className="object-contain"
+                />
+                <Image
+                  src={NIB_2}
+                  width={500}
+                  alt="NIB_2"
+                  className="object-contain"
+                />
               </div>
             </div>
           </div>

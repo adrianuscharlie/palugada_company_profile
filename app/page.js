@@ -4,6 +4,7 @@ import Hero from "@/assets/hero.jpg";
 import Card from "@/components/ProductCard";
 import { useEffect, useState } from "react";
 import { getProducts } from "@/utils/firebase.js";
+import { Carousel } from "@material-tailwind/react";
 import Link from "next/link";
 export default function Home() {
   const [products, setProducts] = useState([]);
@@ -15,7 +16,7 @@ export default function Home() {
         const data = await getProducts();
 
         // Introduce a 10-second (10000 milliseconds) delay
-        await new Promise((resolve) => setTimeout(resolve, 250));
+        await new Promise((resolve) => setTimeout(resolve, 300));
 
         // Update the state with the fetched data
         setProducts(data.slice(0, 6));
@@ -32,8 +33,7 @@ export default function Home() {
   return (
     <>
       <section
-        className="hero bg-cover bg-center  w-full px-10  flex lg:px-20 py-40  lg:py-48 gap-5 "
-        style={{ backgroundImage: `url(${Hero})` }}
+        className="w-full px-10  flex lg:px-20 py-40  lg:py-48 gap-5 "
       >
         <div className="container">
           <div className="flex flex-wrap justify-center items-center">
@@ -47,7 +47,7 @@ export default function Home() {
               <div className="max-w-xl pt-10">
                 <Link
                   href={"/about"}
-                  className="bg-primary py-3 px-5 text-sm font-medium text-center text-secondary rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300"
+                  className="bg-gradient-to-r from-cyan-500 to-blue-500 py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300"
                 >
                   Learn More
                 </Link>
@@ -56,10 +56,10 @@ export default function Home() {
             <div className="w-full flex self-center justify-center lg:w-1/2 items-center">
               <Image
                 src={Hero}
-                width={500}
-                height={200}
+                width={600}
+                height={240}
                 alt="hero"
-                className="object-contain rounded-sm"
+                className="object-contain rounded-lg"
               />
             </div>
           </div>
@@ -117,7 +117,7 @@ export default function Home() {
             <div className="transition ease-in-out duration-300 hover:-translate-y-1 hover:scale-110 max-w-xl mx-auto text-center pt-10">
               <Link
                 href={"/products"}
-                className="bg-primary py-3 px-5 text-sm font-medium text-center text-secondary rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300"
+                className="bg-gradient-to-r from-cyan-500 to-blue-500 py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300"
               >
                 See More Product
               </Link>
