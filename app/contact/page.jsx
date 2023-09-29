@@ -23,7 +23,7 @@ const Contact = () => {
                   <div className="grid grid-cols-2 lg:grid-cols-4 rounded-xl gap-5">
                     <Link
                       target="_blank"
-                      href={"mailto:palugadasejahteragroup@gmail.com"}
+                      href={"mailto:business@palugadasejahteragroup.com"}
                       className="group flex flex-wrap rounded-full text-white bg-primary hover:bg-secondary p-5"
                     >
                       <svg
@@ -36,7 +36,7 @@ const Contact = () => {
                         <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
                       </svg>
                       <span class="absolute scale-0 rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100">
-                        palugadasejahteragroup@gmail.com
+                      business@palugadasejahteragroup.com
                       </span>
                     </Link>
                     <Link
@@ -97,7 +97,7 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="w-full justify-start items-center text-start  lg:w-1/2">
-                  <form action="mailto:palugadasejahteragroup@gmail.com" className="space-y-8  " enctype="text/plain">
+                  <form action="mailto:business@palugadasejahteragroup.com" className="space-y-8  " enctype="text/plain">
                     <div>
                       <label
                         for="email"
