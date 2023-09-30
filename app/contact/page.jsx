@@ -180,7 +180,7 @@ const Contact = () => {
                     <Link
                       type="submit"
                       href={"mailto:business@palugadasejahteragroup.com"}
-                      className="bg-primary py-3 px-5 text-sm font-medium text-center text-secondary rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300"
+                      className=" mt-10 bg-primary py-3 px-5 text-sm font-medium text-center text-secondary rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300"
                     >
                       Send message
                     </Link>
