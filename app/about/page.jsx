@@ -76,11 +76,11 @@ const page = () => {
                 }
               </h3>
               <h3 className="text-xl font-semibold mb-3">
-                Economic Empowerment
+              Global Collaboration
               </h3>
               <h3 className="text-lg mb-3">
                 {
-                  "We're dedicated to fostering local economic growth by empowering businesses, entrepreneurs, and communities through expand their market into international market"
+                  "We'll forge partnerships with international entities to meet global needs and boost Indonesia's economy, fostering trade, investment, and knowledge exchange."
                 }
               </h3>
             </div>
